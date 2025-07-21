@@ -48,22 +48,26 @@ nav {
   flex-wrap: nowrap;
 }
 
-/* Logo on left */
+/* Logo top-left pinned */
 .logo {
   height: 50px;
   filter: drop-shadow(0 0 3px #00ff00);
   flex-shrink: 0;
+  order: 1;
 }
 
-/* Nav links on right with bigger clickable area */
+/* Nav links aligned top-right with max space */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2.5rem;
+  gap: 3rem;
   margin: 0;
   padding: 0;
   font-size: 1.3rem;
   font-weight: 700;
+  order: 2;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 /* Nav links color and border */
@@ -90,6 +94,7 @@ nav {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  order: 3;
 }
 
 .hamburger .bar {
@@ -274,32 +279,6 @@ h2 {
   }
 }
 
-/* Skills snapshot */
-.skills-snapshot {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.skills-snapshot h3 {
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #00ff00;
-  display: inline-block;
-  padding-bottom: 0.3rem;
-}
-
-.skills-snapshot ul {
-  list-style: none;
-  padding: 0;
-  color: #00ff00;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.skills-snapshot ul li {
-  margin: 0.5rem 0;
-}
-
 /* Footer styling */
 footer {
   text-align: center;
@@ -308,6 +287,22 @@ footer {
   color: #32cd32;
   text-shadow: 0 0 3px #00ff00;
   margin-top: 3rem;
+}
+
+/* Contact page Snapchat logo square and username inline */
+.contact-container .contact p.snapchat-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.2rem;
+}
+
+.snapchat-logo-square {
+  width: 20px;
+  height: 20px;
+  background-color: #00ff00;
+  border-radius: 3px;
 }
 
 /* Responsive for Hamburger */
@@ -379,18 +374,4 @@ footer {
 .nav-links li a:hover::after,
 .nav-links li a.active::after {
   width: 100%;
-}
-
-/* YouTube icon resizing on mobile */
-.youtube-link img {
-  width: 32px;
-  height: 24px;
-  transition: width 0.3s ease;
-}
-
-@media (max-width: 480px) {
-  .youtube-link img {
-    width: 24px;
-    height: 18px;
-  }
 }

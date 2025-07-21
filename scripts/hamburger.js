@@ -6,8 +6,8 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
 });
 
-// Optional: Close nav when clicking a link (mobile friendly)
-document.querySelectorAll('.nav-links a').forEach(link => {
+// Close nav when clicking a link (mobile friendly)
+document.querySelectorAll('.nav-links a').forEach((link) => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
     hamburger.classList.remove('open');

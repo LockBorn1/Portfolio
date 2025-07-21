@@ -1,36 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gage Milner - Cyber Duck Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
 <body>
   <canvas id="matrix"></canvas>
 
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <div class="container">
-    <header>
+    <header id="home">
       <img src="assets/hocking-logo.png" alt="Hocking College Logo" class="logo" />
-      <div>
-        <h1>Gage Milner <span class="nickname">"Cyber Duck"</span></h1>
-        <h2>Information Tech Support Technician - Hocking College</h2>
-      </div>
+      <h1>Gage Milner</h1>
+      <h2>Information Tech Support Technician - Hocking College</h2>
     </header>
 
     <section class="profile-pic">
       <img src="assets/cyberduck.png" alt="Cyber Duck" />
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <h3>About Me</h3>
       <p>
         I am an experienced IT Support Technician with strong skills in hardware troubleshooting, networking, and IT operations. Certified in CompTIA A+, Network+, and IT Ops Specialist, I am dedicated to providing efficient technical solutions and support within fast-paced environments. Passionate about technology and constantly improving my skills to keep up with the evolving IT landscape.
       </p>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
       <h3>Skills & Certifications</h3>
       <ul>
         <li>CompTIA A+</li>
@@ -41,7 +39,7 @@
       </ul>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <button id="contact-btn">Contact Me</button>
       <div id="contact-info" class="hidden">
         <p>Email: <a href="mailto:milnerg@hocking.edu">milnerg@hocking.edu</a></p>
@@ -59,4 +57,3 @@
   <script src="scripts/matrix.js"></script>
   <script src="scripts/contactToggle.js"></script>
 </body>
-</html>

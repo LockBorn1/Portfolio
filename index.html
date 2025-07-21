@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gage Milner - Portfolio</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
@@ -30,26 +27,31 @@
     </div>
   </nav>
 
-  <div class="container">
+  <main class="container">
     <header>
       <h1>Gage Milner</h1>
       <h2>Information Tech Support Technician - Hocking College</h2>
     </header>
 
+    <section class="interactive-cable-section">
+      <svg id="interactive-cable" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg" aria-label="Interactable Text Cable">
+        <defs>
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%" >
+            <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#00ff00" flood-opacity="0.8"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#32cd32" flood-opacity="0.6"/>
+          </filter>
+        </defs>
+        <text id="cable-text" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" filter="url(#glow)">
+          INTERACTABLE
+        </text>
+      </svg>
+      <p class="instruction">Hover over the letters to see the cable glow!</p>
+    </section>
+
     <section class="profile-pic">
       <img src="assets/cyberduck.png" alt="Cyber Duck" />
     </section>
-
-    <section class="intro-text">
-      <p class="typing"></p>
-    </section>
-
-    <section class="quick-links">
-      <a href="about.html" class="btn">About Me</a>
-      <a href="skills.html" class="btn">My Skills</a>
-      <a href="contact.html" class="btn">Get in Touch</a>
-    </section>
-  </div>
+  </main>
 
   <footer>
     <p>© 2025 Gage Milner</p>
@@ -57,6 +59,6 @@
 
   <script src="scripts/matrix.js"></script>
   <script src="scripts/hamburger.js"></script>
-  <script src="scripts/typing.js"></script>
+  <script src="scripts/interactiveCable.js"></script>
 </body>
 </html>

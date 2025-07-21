@@ -13,7 +13,7 @@
   <nav>
     <div class="nav-container">
       <img src="assets/hocking-logo.png" alt="Hocking College Logo" class="logo" />
-      <div id="hamburger" class="hamburger">
+      <div id="hamburger" class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -22,12 +22,12 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li class="contact-mobile"><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="container">
+  <main class="container contact-container">
     <section class="contact">
       <h3>Contact</h3>
       <p>Email: <a href="mailto:milnerg@hocking.edu">milnerg@hocking.edu</a></p>
@@ -38,13 +38,17 @@
           <img
             src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/1200px-Snapchat_logo.svg.png"
             alt="Snapchat"
-            class="snapchat-logo"
+            class="snapchat-logo-small"
           />
           gage_milner25
         </a>
       </p>
     </section>
-  </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Gage Milner</p>
+  </footer>
 
   <script src="scripts/matrix.js"></script>
   <script src="scripts/hamburger.js"></script>

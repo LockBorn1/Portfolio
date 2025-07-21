@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: black;
+  color: #00ff00;
+  font-family: 'Roboto Mono', monospace;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(0,0,0,0.85);
+  border: 1px solid #00ff00;
+  border-radius: 8px;
+  z-index: 1;
+  box-shadow: 0 0 10px #00ff00;
+  animation: fadeIn 2s ease forwards;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #00ff00;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  filter: drop-shadow(0 0 3px #00ff00);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.nickname {
+  font-weight: 700;
+  color: #32cd32;
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #90ee90;
+}
+
+.profile-pic {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-pic img {
+  width: 180px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ff00;
+  border: 2px solid #00ff00;
+  animation: glow 3s infinite alternate ease-in-out;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  border-bottom: 1px solid #00ff00;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contact button {
+  background: transparent;
+  border: 1.5px solid #00ff00;
+  color: #00ff00;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact button:hover {
+  background: #00ff00;
+  color: black;
+}
+
+.hidden {
+  display: none;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.contact a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.snapchat-logo {
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 6px;
+  filter: drop-shadow(0 0 2px #00ff00);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #00ff00;
+  }
+  100% {
+    box-shadow: 0 0 20px #32cd32;
+  }
+}

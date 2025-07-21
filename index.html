@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gage Milner - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <title>Gage Milner - Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
@@ -13,7 +16,7 @@
   <nav>
     <div class="nav-container">
       <img src="assets/hocking-logo.png" alt="Hocking College Logo" class="logo" />
-      <div id="hamburger" class="hamburger">
+      <div id="hamburger" class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -22,7 +25,7 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="contact-mobile"><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -36,9 +39,24 @@
     <section class="profile-pic">
       <img src="assets/cyberduck.png" alt="Cyber Duck" />
     </section>
+
+    <section class="intro-text">
+      <p class="typing"></p>
+    </section>
+
+    <section class="quick-links">
+      <a href="about.html" class="btn">About Me</a>
+      <a href="skills.html" class="btn">My Skills</a>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
   </div>
+
+  <footer>
+    <p>© 2025 Gage Milner</p>
+  </footer>
 
   <script src="scripts/matrix.js"></script>
   <script src="scripts/hamburger.js"></script>
+  <script src="scripts/typing.js"></script>
 </body>
 </html>

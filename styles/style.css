@@ -293,11 +293,11 @@ footer {
 
 /* Contact page Snapchat logo square and username inline */
 .contact-container .contact p.snapchat-row {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
   font-size: 1.2rem;
+  justify-content: center;
 }
 
 .snapchat-logo-square {
@@ -305,6 +305,12 @@ footer {
   height: 20px;
   background-color: #00ff00;
   border-radius: 3px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.snapchat-username {
+  line-height: 20px; /* Match height of square */
 }
 
 /* Responsive for Hamburger */

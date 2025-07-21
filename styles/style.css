@@ -38,38 +38,37 @@ nav {
   box-shadow: 0 0 10px #00ff00;
 }
 
+/* Full width nav-container with side padding */
 .nav-container {
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
-  flex-wrap: nowrap;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
-/* Logo top-left pinned */
+/* Logo on left */
 .logo {
   height: 50px;
   filter: drop-shadow(0 0 3px #00ff00);
   flex-shrink: 0;
-  order: 1;
 }
 
-/* Nav links aligned top-right with max space */
+/* Nav links aligned right */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 3rem;
   margin: 0;
   padding: 0;
+  font-size: 1.3rem;
   font-weight: 700;
-  order: 2;
   justify-content: flex-end;
   flex-grow: 1;
 }
 
-/* Default nav link style */
+/* Nav links style */
 .nav-links li a {
   color: #00ff00;
   text-decoration: none;
@@ -77,7 +76,7 @@ nav {
   border-radius: 5px;
   border-bottom: 3px solid transparent;
   transition: border-color 0.3s ease, background-color 0.3s ease;
-  font-size: 1.3rem; /* default desktop size */
+  font-size: 1.3rem;
 }
 
 /* Hover and active states */
@@ -88,7 +87,6 @@ nav {
 }
 
 /* Mobile hamburger */
-
 .hamburger {
   display: none;
   flex-direction: column;

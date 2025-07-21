@@ -206,7 +206,7 @@ h2 {
   transform: scale(1.05);
 }
 
-/* Quote section with glitch effect */
+/* Quote section with glitch effect and fade transition */
 .quote-section {
   text-align: center;
   font-size: 1.4rem;
@@ -222,6 +222,8 @@ h2 {
   color: #32cd32;
   text-transform: uppercase;
   animation: glitchAnim 2s infinite;
+  transition: opacity 0.8s ease;
+  opacity: 1;
 }
 
 .glitch-text::before,
@@ -374,4 +376,18 @@ footer {
 .nav-links li a:hover::after,
 .nav-links li a.active::after {
   width: 100%;
+}
+
+/* YouTube icon resizing on mobile */
+.youtube-link img {
+  width: 32px;
+  height: 24px;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .youtube-link img {
+    width: 24px;
+    height: 18px;
+  }
 }

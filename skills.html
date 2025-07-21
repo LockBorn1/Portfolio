@@ -12,8 +12,10 @@
 
   <nav>
     <div class="nav-container">
-      <img src="assets/hocking-logo.png" alt="Hocking College Logo" class="logo" />
-      <div id="hamburger" class="hamburger">
+      <a href="index.html" class="logo-link" aria-label="Go to Home Page">
+        <img src="assets/hocking-logo.png" alt="Hocking College Logo" class="logo" />
+      </a>
+      <div id="hamburger" class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -22,12 +24,12 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html" class="active">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="contact-mobile"><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="container">
+  <main class="container">
     <section class="skills">
       <h3>Skills & Certifications</h3>
       <ul>
@@ -38,7 +40,11 @@
         <li>Networking & IT Support</li>
       </ul>
     </section>
-  </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Gage Milner</p>
+  </footer>
 
   <script src="scripts/matrix.js"></script>
   <script src="scripts/hamburger.js"></script>
